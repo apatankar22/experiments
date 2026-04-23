@@ -8,9 +8,20 @@ Implements and evaluates three KV-cache compression methods:
 
 ## Run
 
+PyTorch wheels may not be available for very new Python versions. If install fails, use Python 3.12 (recommended) and rerun setup.
+
 ```bash
+python3 -m venv .venv
+source .venv/bin/activate
 python -m pip install -r project/requirements.txt
 python -m project.main
+```
+
+Or via `make`:
+
+```bash
+PYTHON=python3.12 make setup
+make run
 ```
 
 Outputs are written to `project/results/`:
