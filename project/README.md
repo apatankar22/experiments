@@ -9,6 +9,7 @@ Implements and evaluates three KV-cache compression methods:
 ## Run
 
 ```bash
+python -m pip install -r project/requirements.txt
 python -m project.main
 ```
 
